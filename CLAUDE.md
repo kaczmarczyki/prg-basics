@@ -39,6 +39,7 @@ Język kursu: **Python 3** (lokalnie Python 3.14, uruchamiany jako `python3`).
 | `portfolio` | **Projekt studenta** (nie z kursu): strona pokazowa w czystym HTML/CSS/JS, bez backendu |
 | `koty` | **Projekt studenta** (nie z kursu): strona „Najpiękniejsze rasy kotów”, czysty HTML/CSS, zdjęcia z Wikimedia Commons |
 | `gry` | **Projekt studenta** (nie z kursu): proste gry w Pythonie do nauki (np. `guess_number.py` – „Zgadnij liczbę”) |
+| `do_poprawy.txt` | **Lista studenta** zadań do naprawy/poprawy – zwykły tekst: sekcje per folder, zadania z `[ ]`/`[x]`, pod spodem punkty „co jest źle -> co zrobić”, na dole szablon. Gdy w `/sprawdz` wyjdą rzeczy do poprawy – zaproponuj dopisanie ich tutaj. |
 
 Rozróżniaj:
 - **Materiały prowadzącego**: pliki `_Temat.md` (instrukcje i zadania, po angielsku, z nagłówkiem „(c) Janusz Stal”) oraz pliki przykładowe/dane w folderach.
