@@ -1,0 +1,8 @@
+print(f'Largest number: {max(7,5,6,8,2)}')
+print(f'Smallest number: {min(4,7,2,3,9,8)}')
+print(f'Length of the prase: {len('computer science')}')
+print(f'Letter: {input('Enter any letter: ')}')
+print(f'Number representation: {int('20303')}')
+print(f'binary representation: {bin(304)}')
+print(f'hexadecimal representation: {hex(304)}')
+print(f'Integer representation of a sign: {ord('€')}')
