@@ -1,1 +1,51 @@
-DO POPRAWY 
+DO POPRAWY
+==========
+(sprawdzone 2026-10-26)
+
+04-Functions
+------------
+[ ] converters.py (zad. 5-2)
+    - cm_to_inch i inch_to_cm maja ZAMIENIONE wzory: 532 cm -> 1351.28 inch (powinno ok. 209.45)
+      -> cm na cale: DZIELISZ przez 2.54, cale na cm: MNOZYSZ przez 2.54
+    - ft_to_cm(n) przyjmuje tylko stopy, a zadanie chce "feet AND inches to centimeters"
+      -> funkcja z dwoma parametrami, np. ft_in_to_cm(feet, inches)
+[ ] test_converters.py (zad. 5-2)
+    - nadal testuje tylko m_to_cm(3), a zadanie: "complete the main program to test the added functions"
+      -> dopisz wywolania nowych funkcji (converters.cm_to_inch(...) itd.)
+[ ] 5-5.py
+    - prostokat rysowany 3 razy, a zadanie mowi: kazda figura DWA razy
+      -> usun jeden prostokat
+    - zmienna pen nic nie rysuje (rysuje domyslny turtle z figures.py)
+      -> pen.speed / pen.hideturtle zamien na turtle.speed / turtle.hideturtle i usun pen = turtle.Turtle()
+[ ] keyboard.py (drobne, opcjonalne)
+    - input_boolean: gdy ktos wpisze cos innego niz y/n, funkcja zwraca ten napis zamiast True/False
+      -> zastanow sie, co ma sie wtedy stac (np. traktuj wszystko poza 'y' jako False)
+[ ] 4-8.py (opcjonalne, "nastepny poziom")
+    - dziala 9/9; mozna uproscic dopisywanie zer f-stringiem: f'{minutes:02d}'
+[ ] sekcja 7 "Practice Makes Perfect" w _Functions.md - jeszcze nie zaczeta
+
+05-MockTest (kolokwium probne: practice_test_01-03.md)
+-----------
+[ ] test_01.py
+    - zla kolejnosc: git status na koncu -> status sprawdza sie PRZED add (i mozna po)
+    - cudzysłowy sie nie zgadzaja: 'Add hello.py" -> "Add hello.py"
+    - brak jednozdaniowych wyjasnien komend i odpowiedzi: czym rozni sie commit od push?
+[ ] zad. 2 (na kartce) - brak sladu, ze zrobione
+[ ] test_03.py
+    - uzyty split(), a zadanie zabrania -> uzyj wycinkow (slicing), np. time[0:2]
+    - komentarz: 36000s w godzinie -> 3600s (w kodzie jest dobrze)
+[ ] test_04.py
+    - brak odwroconej liczby (Reversed number) -> zbuduj ja z cyfr: third*100 + ...
+[ ] test_06.py
+    - program nic nie wypisuje; brak usuniecia prefiksu 0b/0x i liczenia jedynek
+      -> wycinek [2:] i metoda .count('1')
+[ ] test-09.py
+    - zla nazwa pliku (myslnik) -> test_09.py
+    - zawiera tylko type(50) - zadanie 9 (stypendium) niezrobione
+[ ] test_10 ... test_14 + bonus 15 - nie zaczete
+[x] test_05.py, test_07.py, test_08.py - dzialaja poprawnie
+
+----------------------------------------------------------
+SZABLON:
+[ ] folder/plik.py
+    - co jest zle -> co zrobic

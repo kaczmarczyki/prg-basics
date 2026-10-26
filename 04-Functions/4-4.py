@@ -9,7 +9,7 @@ def sum_digits(number):
 
     for digit in string_number:
         running_total += int(digit)
-
+            
     return running_total
 
 input_number = int(input("Enter your number: "))

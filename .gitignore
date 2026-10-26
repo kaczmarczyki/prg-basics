@@ -1,2 +1,5 @@
 # macOS - smieciowe pliki Findera
 .DS_Store
+
+# Python - skompilowane pliki tworzone automatycznie przy imporcie
+__pycache__/
