@@ -16,4 +16,6 @@ def input_boolean(message):
         boolean = True
     elif boolean == 'n' or boolean == 'N':
         boolean = False
+    # else:
+    #     boolean = 'Wrong character typed!'
     return boolean

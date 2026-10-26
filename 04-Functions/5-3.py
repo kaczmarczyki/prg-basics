@@ -11,7 +11,9 @@ print('===========')
 print(f'Name: {first_name}')
 print(f'Last name: {last_name}')
 print(f'Age: {age}')
-if is_salary_hidden == False:
+if is_salary_hidden == True:
+    print(f'Salary: *********')
+elif is_salary_hidden == False:
     print(f'Salary: {salary}')
 else:
-    print(f'Salary: *********')
+    print('Wrong character typed!')
