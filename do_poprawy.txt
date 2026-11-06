@@ -1,31 +1,103 @@
 DO POPRAWY
 ==========
-(sprawdzone 2026-10-26)
+(sprawdzone 2026-10-26, aktualizacja 2026-11-06)
+
+02-TypesAndVariables
+--------------------
+[ ] 6-9.py  !!! NAJPIERW TO !!!
+    - zamiast kodow z zadania (67, 111, 111, 108, 33) wpisane inne kody,
+      ktore skladaja sie w obrazliwe slowo -> wpisz kody z polecenia
+      (wyjdzie ukryte slowo) - repo jest publiczne i widzi je prowadzacy
+[ ] 3-3.py
+    - wartosci zamienione "na sztywno" (x=34, y=7) -> zamien je przez zmienna z
+      (przepisz x do z, potem ...), tak zeby dzialalo dla DOWOLNYCH x i y
+[ ] 3-4.py
+    - 70 km/h daje 252 m/s -> km/h na m/s sie DZIELI przez 3.6, a nie mnozy
+[ ] 3-6.py
+    - wzrost 1.8 m wywala program (ValueError) -> int() zamien na float()
+[ ] 5-3.py
+    - objetosc i pole powierzchni zamienione miejscami (3,4,5 -> objetosc 60, pole 94)
+      uwaga: w poleceniu prowadzacego tez jest odwrotnie - to jego literowka
+[ ] 5-4.py
+    - wypisuje tylko VAT -> wypisz tez kwote, oba z 2 miejscami po przecinku
+      (wzor z polecenia: "Amount  : 15.84" / "VAT 23% :  3.64", podpowiedz: :.2f)
+[ ] 6-3.py
+    - wypisuje "U E K", a ma byc "KUE" -> zmien kolejnosc i usun spacje
+[ ] 6-8.py
+    - K i K daje -1, a powinno 0 -> co sie dzieje, gdy obie litery sa takie same?
+[ ] 7-1.py
+    - wiek 26 daje False, a "do 26 lat wlacznie" ma dac True -> < na <=
+[ ] 8-3.py
+    - sa tylko komentarze, brak kodu -> dopisz program (Kelvin, Fahrenheit)
+[ ] 8-4.py
+    - wypisuje 6.27 stopy i 75.2 cala (to dwa rozne przeliczenia calego wzrostu)
+      -> najpierw cm na cale, potem // 12 (pelne stopy) i % 12 (reszta cali)
+[ ] drobiazgi (dziala, ale warto):
+    - 1-3.py: srednik ; na koncu linii w Pythonie jest zbedny
+    - 3-7.py, 6-7.py: zostaly linie "..." z szablonu -> usun
+    - 4-1.py: brak "cm" przy wzroscie
+    - 5-5.py: import math nieuzywany; round() daje 21.0 zamiast 21.00 -> :.2f
+    - 6-2.py: wypisuje "I . K" ze spacjami -> f-string: f'{name[0]}.{surname[0]}.'
+
+03-ControlStructures
+--------------------
+[ ] 3-5.py
+    - sierpien (8) ma 30 dni, a wrzesien (9) 31 -> zamien 8 i 9 miejscami w warunkach
+      (w 3-6.py masz to dobrze - porownaj)
+[ ] 5-5.py
+    - liczy tylko sume, brak sredniej arytmetycznej -> policz, ILE liczb wpisano
+[ ] 6-11.py
+    - poleca zakup przy KAZDEJ obnizce (195 zl -> "Buy" przy 2.5%)
+      -> zadanie: tylko gdy obnizka >= 10%
+[ ] 6-12.py
+    - 2 produkty -> NameError (amount_to_pay nie istnieje, gdy if sie nie wykona)
+    - 5 x 40 zl daje 150, a powinno 170 -> rabat 25% tylko na produkty PONAD dwa
+[ ] 6-16.py
+    - plukanie i wirowanie sie wykluczaja (elif) - oba "y" daje tylko plukanie
+    - oba "n" wypisuje "Wrong character typed!" -> dwa osobne if-y zamiast if/elif
+[ ] 6-29.py (liczby pierwsze)
+    - tylko wczytanie N, brak reszty programu
+[ ] atm.py
+    - "Change PIN" pisze "zmieniony", ale PIN zostaje 1111 -> brakuje pin = new_pin
+    - PIN "12" przechodzi -> sprawdz tez dlugosc: dokladnie 4 cyfry (len)
+    - menu mowi "(1-4)", a opcji jest 6
+[ ] drobiazgi (dziala, ale warto):
+    - 2-3.py, 2-4.py, 2-5.py, 3-5.py: zly symbol/miesiac -> NameError, bo zmienna
+      nie powstaje; pomysl, jak nie liczyc wyniku, gdy dane sa zle
+    - 6-5.py: temperatura wpisana na sztywno (0) i niewypisana -> input() + wypisz ja
 
 04-Functions
 ------------
-[ ] sekcja 7 "Practice Makes Perfect" w _Functions.md - jeszcze nie zaczeta
-
-05-MockTest (kolokwium probne: practice_test_01-03.md)
------------
-[ ] test_01.py
-    - zla kolejnosc: git status na koncu -> status sprawdza sie PRZED add (i mozna po)
-    - cudzysłowy sie nie zgadzaja: 'Add hello.py" -> "Add hello.py"
-    - brak jednozdaniowych wyjasnien komend i odpowiedzi: czym rozni sie commit od push?
-[ ] zad. 2 (na kartce) - brak sladu, ze zrobione
-[ ] test_03.py
-    - uzyty split(), a zadanie zabrania -> uzyj wycinkow (slicing), np. time[0:2]
-    - komentarz: 36000s w godzinie -> 3600s (w kodzie jest dobrze)
-[ ] test_04.py
-    - brak odwroconej liczby (Reversed number) -> zbuduj ja z cyfr: third*100 + ...
-[ ] test_06.py
-    - program nic nie wypisuje; brak usuniecia prefiksu 0b/0x i liczenia jedynek
-      -> wycinek [2:] i metoda .count('1')
-[ ] test-09.py
-    - zla nazwa pliku (myslnik) -> test_09.py
-    - zawiera tylko type(50) - zadanie 9 (stypendium) niezrobione
-[ ] test_10 ... test_14 + bonus 15 - nie zaczete
-[x] test_05.py, test_07.py, test_08.py - dzialaja poprawnie
+[ ] 4-3.py
+    - liczy pole z podstawy i wysokosci, a zadanie kaze uzyc WZORU HERONA (boki a, b, c)
+      -> + 3 wydruki testowe: 3-4-5 -> 6, 5-12-13 -> 30, 7-24-25 -> 84
+[ ] 7-7.py / is_binary.py
+    - nie uruchamia sie (IndentationError): pusta petla for, return test (brak zmiennej)
+      -> sprawdzaj, czy znak NIE nalezy do '01' -> wtedy od razu return False
+      -> uwaga: w petli "for i in napis" i to juz ZNAK, nie numer pozycji
+[ ] 7.10.py / number_of_numbers.py
+    - f(-7,8) daje 12, a powinno 3: while w srodku dolicza wszystkie liczby az do zera
+      -> jedna petla po range(x, y + 1) i jeden if z dwoma warunkami (ujemna I parzysta)
+    - nazwa pliku 7.10.py (kropka) -> 7-10.py jak reszta
+    - zmienna sum_of_digits liczy ILE liczb -> lepsza nazwa: count
+[ ] 7-12.py / asterisks.py
+    - f(4) daje ~1000 gwiazdek bez "/" -> ma byc "*/*/*/*"
+      -> n gwiazdek, miedzy nimi "/"; ukosnikow jest o 1 mniej niz gwiazdek
+    - print(..., end="/") w 7-12.py - ukosniki ma robic FUNKCJA, nie print
+[ ] 4-8.py (opcjonalne, "nastepny poziom")
+    - dziala 9/9; mozna uproscic dopisywanie zer f-stringiem: f'{minutes:02d}'
+      -> NAJPIERW sie dowiedz, o co chodzi z :02d i jak to dziala
+         (np. /wyjasnij formatowanie f-stringow :02d, albo poszukaj "python format specification")
+      -> pobaw sie w terminalu: print(f'{5:02d}'), print(f'{42:02d}'), print(f'{7:03d}')
+         i sprawdz, co znaczy kazdy znak: 0, 2, d
+      -> dopiero potem zamien w 4-8.py reczne dopisywanie '0' (if len(...) < 2) na :02d
+[ ] drobiazgi (dziala, ale warto):
+    - range.py: nazwa = wbudowana funkcja range() -> po "import range" petla
+      for ... in range(...) w tym pliku sie wysypie; zmien np. na in_range.py
+    - 2-1.py: w max() brakuje liczby 3; brak ostatniego punktu: abs(-17)
+    - 7-5.py: wypisuje True, a w przykladzie z polecenia jest "yes"
+    - 7-11.py: bool(r1) zbedne - funkcja juz zwraca True/False
+[ ] 7-13 ... 7-31 - nie zaczete (19 zadan)
 
 ----------------------------------------------------------
 SZABLON:
