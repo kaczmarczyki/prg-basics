@@ -1,5 +1,6 @@
 import asterisks
 
 r1 = asterisks.f(4)
-
-print(r1,end="/")
+r2 = asterisks.f(1)
+print(r1)
+print(r2)

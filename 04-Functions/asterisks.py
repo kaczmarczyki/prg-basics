@@ -1,7 +1,5 @@
 def f(n):
     result = "*"
-    for i in range(0,n):
-        for j in range (0,i):
-            result = result * n
+    result = result + ("/*")*n
 
     return result

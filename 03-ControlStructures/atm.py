@@ -38,6 +38,7 @@ while True:
             if new_pin != pin:
                 pin_repeat = input("Repeat your new PIN code: ")
                 if new_pin == pin_repeat:
+                    pin = new_pin
                     print("Your PIN code has been changed.")
                 else:
                     print("PIN codes dont match!")
