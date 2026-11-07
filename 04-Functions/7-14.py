@@ -1,4 +1,4 @@
-import calculator
+import calculator_7_14 as calculator
 
 r1 = calculator.f(2,3,"+")
 r2 = calculator.f(2,3,"%")

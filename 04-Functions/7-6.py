@@ -1,4 +1,4 @@
-import hide
+import hide_7_6 as hide
 
 credit_card_number = input('Enter your credit card number: ')
 

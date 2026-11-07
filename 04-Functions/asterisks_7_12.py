@@ -1,5 +1,5 @@
 def f(n):
     result = "*"
-    result = result + ("/*")*n
+    result = result + ("/*")*(n-1)
 
     return result

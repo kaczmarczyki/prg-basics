@@ -1,4 +1,4 @@
-import count_people
+import count_people_7_15 as count_people
 
 r1 = count_people.f("+-+++-+---")
 r2 = count_people.f("+-+-+-+-")

@@ -1,0 +1,14 @@
+def f(n):
+    if n <= 0:
+        return "N has to be bigger than 0!"
+    elif n == 1:
+        return 0
+    elif n == 2:
+        return 1
+    a = 0
+    b = 1
+    for i in range(3,n+1):
+        c = a+b
+        a = b
+        b = c
+    return b

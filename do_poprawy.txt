@@ -1,11 +1,11 @@
 DO POPRAWY
 ==========
-(sprawdzone 2026-10-26, aktualizacja 2026-11-06)
+(sprawdzone 2026-10-26, aktualizacja 2026-11-07)
 
 04-Functions
 -----------------
 
-[ ] 7-16 ... 7-31 - nie zaczete (19 zadan)
+[ ] 7-21 ... 7-31 - nie zaczete (11 zadan)
 
 ----------------------------------------------------------
 SZABLON:

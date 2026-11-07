@@ -1,4 +1,4 @@
-import is_negative
+import is_negative_7_11 as is_negative
 
 r1 = is_negative.f(11,6,-4)
 r2 = is_negative.f(5,4,14)

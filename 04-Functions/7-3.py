@@ -1,4 +1,4 @@
-import months
+import months_7_3 as months
 
 month_number = int(input('Enter month number: '))
 

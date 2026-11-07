@@ -1,4 +1,4 @@
-import is_binary
+import is_binary_7_7 as is_binary
 
 bin_number = input('Enter binary number: ')
 

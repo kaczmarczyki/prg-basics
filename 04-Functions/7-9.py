@@ -1,4 +1,4 @@
-import sum_of_digits
+import sum_of_digits_7_9 as sum_of_digits
 
 n1 = sum_of_digits.f(3124, True)
 n2 = sum_of_digits.f(3124, False)
